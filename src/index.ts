@@ -1,6 +1,6 @@
-import WebSocket, { WebSocketServer } from 'ws';
+import { WebSocketServer } from 'ws';
 import http from 'http';
-import generateSuggestion from './api/generateSuggestions/index.js';
+import generateSuggestion from './api/generateSuggestions/index'; // Remove .js extension
 
 const server = http.createServer(function(request: any, response: any) {
     console.log((new Date()) + ' Received request for ' + request.url);
